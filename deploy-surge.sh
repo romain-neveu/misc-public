@@ -1,0 +1,1 @@
+surge --project ./public --domain glycemie-georges.surge.sh

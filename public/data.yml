@@ -1,0 +1,181 @@
+stats: 
+- 
+    date: 2020-10-30
+    change_ui: 6
+- 
+    date: 2020-10-31
+    mesure: 455
+- 
+    date: 2020-11-03
+    mesure: 383
+- 
+    date: 2020-11-06
+    mesure: 438
+- 
+    date: 2020-11-09
+    mesure: 439
+- 
+    date: 2020-11-11
+    change_ui: 3
+- 
+    date: 2020-11-14
+    mesure: 489
+- 
+    date: 2020-11-17
+    mesure: 295
+- 
+    date: 2020-11-23
+    note: oubli insuline le matin
+- 
+    date: 2020-11-25
+    mesure: 334
+- 
+    date: 2020-11-28
+    mesure: 317
+- 
+    date: 2020-12-01
+    mesure: 295
+- 
+    date: 2020-12-14
+    mesure: 190
+- 
+    date: 2020-12-17
+    note:  passage au croquette diabetique
+- 
+    date: 2020-12-19
+    mesure: 112
+- 
+    date: 2020-12-19
+    note: pas insuline le soir
+- 
+    date: 2020-12-20
+    change_ui: 2
+- 
+    date: 2020-12-20
+    mesure: 298
+- 
+    date: 2020-12-21
+    change_ui: 3
+- 
+    date: 2020-12-22
+    mesure: 277
+- 
+    date: 2020-12-26
+    mesure: 276
+- 
+    date: 2020-12-28
+    mesure: 248
+- 
+    date: 2020-12-31
+    mesure: 217
+- 
+    date: 2021-01-04
+    mesure: 264
+- 
+    date: 2021-01-06
+    mesure: 286
+- 
+    date: 2021-01-08
+    mesure: 257
+- 
+    date: 2021-01-14
+    mesure: 286
+- 
+    date: 2021-01-24
+    mesure: 305
+- 
+    date: 2021-02-06
+    mesure: 219
+- 
+    date: 2021-02-16
+    mesure: 055
+- 
+    date: 2021-02-16
+    note: pas insuline soir
+- 
+    date: 2021-02-17
+    change_ui: 2
+- 
+    date: 2021-02-17
+    mesure: 282
+- 
+    date: 2021-02-23
+    mesure: 270
+- 
+    date: 2021-03-04
+    mesure: 270
+- 
+    date: 2021-03-14
+    mesure: 289
+- 
+    date: 2021-03-27
+    mesure: 215
+- 
+    date: 2021-04-03
+    mesure: 277
+- 
+    date: 2021-05-09
+    mesure: 264
+- 
+    date: 2021-06-13
+    mesure: 180
+- 
+    date: 2021-07-03
+    mesure: 208
+- 
+    date: 2021-07-30
+    mesure: 060
+- 
+    date: 2021-07-31
+    change_ui: 1
+- 
+    date: 2021-07-31
+    mesure: 115
+- 
+    date: 2021-08-04
+    mesure: 114
+- 
+    date: 2021-08-07
+    note: erreur 2ui matin et 0 soir
+- 
+    date: 2021-08-08
+    mesure: 150
+- 
+    date: 2021-08-21
+    mesure: 303
+- 
+    date: 2021-08-28
+    mesure: 131
+- 
+    date: 2021-11-05
+    mesure: 092
+- 
+    date: 2021-11-05
+    change_ui: 1ui
+- 
+    date: 2021-11-21
+    mesure: 076
+- 
+    date: 2021-11-21
+    note: arrêt insuline
+- 
+    date: 2021-11-27
+    mesure: 104
+- 
+    date: 2021-12-04
+    mesure: 102
+- 
+    date: 2021-12-19
+    mesure: 120
+- 
+    date: 2022-01-13
+    mesure: 150
+- 
+    date: 2022-01-23
+    mesure: 111
+- 
+    date: 2022-02-24
+    mesure: 106
+- 
+    date: 2022-04-24
+    mesure: 089
