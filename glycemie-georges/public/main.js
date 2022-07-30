@@ -1,6 +1,6 @@
 (() => {
-    YAML.load('./data.yml', data => {
 
+    const loadGraph = (data) => {
         let measures = [["Date", "Glycemie", "Dosage unité ui"]];
         let current_ui = 6;
         data.stats.forEach(stat => {
@@ -34,6 +34,18 @@
 
             chart.draw(data, google.charts.Line.convertOptions(options));
         });
-    });
+    }
+
+    // Try first the file on github to have the last version
+    YAML.load('https://raw.githubusercontent.com/romain-neveu/misc-public/main/glycemie-georges/public/data.yml',
+        data => {
+            if (data) {
+                loadGraph(data)
+            }
+            else {
+                // At least get the current file
+                YAML.load('./data.yml', data => loadGraph(data));
+            }
+        });
 })();
 
