@@ -1,5 +1,10 @@
 (() => {
 
+    const loadData = (data) => {
+        loadGraph(data);
+        loadNotes(data)
+    }
+
     const loadGraph = (data) => {
         let measures = [["Date", "Glycemie", "Dosage unité ui"]];
         let current_ui = 6;
@@ -30,21 +35,36 @@
                 }
             };
 
-            var chart = new google.charts.Line(document.getElementById('stats'));
+            var chart = new google.charts.Line(document.getElementById('graph'));
 
             chart.draw(data, google.charts.Line.convertOptions(options));
         });
+    }
+
+    const loadNotes = (data) => {
+        let notes = data.stats.filter(stat => stat.note);
+
+        var ul = document.createElement("ul");
+        notes.forEach(note => {
+            var li = document.createElement("li");
+            var date = new Date(note.date);
+             
+            li.textContent = date.getUTCFullYear() +"/" + (date.getUTCMonth()+1) + "/"+ date.getUTCDate() + ": " + note.note;
+            ul.append(li);
+        });
+
+        document.getElementById('notes').append(ul);
     }
 
     // Try first the file on github to have the last version
     YAML.load('https://raw.githubusercontent.com/romain-neveu/misc-public/main/glycemie-georges/public/data.yml',
         data => {
             if (data) {
-                loadGraph(data)
+                loadData(data)
             }
             else {
                 // At least get the current file
-                YAML.load('./data.yml', data => loadGraph(data));
+                YAML.load('./data.yml', data => loadData(data));
             }
         });
 })();
