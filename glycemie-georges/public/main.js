@@ -42,14 +42,21 @@
     }
 
     const loadNotes = (data) => {
-        let notes = data.stats.filter(stat => stat.note);
 
         var ul = document.createElement("ul");
-        notes.forEach(note => {
+        data.stats.forEach(stat => {
             var li = document.createElement("li");
-            var date = new Date(note.date);
-             
-            li.textContent = date.getUTCFullYear() +"/" + (date.getUTCMonth()+1) + "/"+ date.getUTCDate() + ": " + note.note;
+            var date = new Date(stat.date);
+
+            li.textContent = date.getUTCFullYear() + "/" + (date.getUTCMonth() + 1) + "/" + date.getUTCDate() + ": ";
+            if (stat.note) {
+                li.textContent += stat.note;
+            } else if (stat.change_ui) {
+                li.textContent += "passage à " + stat.change_ui + "ui matin et soir";
+            } else { 
+                li.textContent += "glycémie " + stat.mesure;
+            }
+
             ul.append(li);
         });
 
